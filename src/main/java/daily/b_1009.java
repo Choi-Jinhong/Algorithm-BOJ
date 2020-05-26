@@ -19,11 +19,10 @@ public class b_1009 {
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
             array[i] = 1;
-            for(int j = 1; j <= b; j++){
+            for(int j = 1; j <= b; j++)
                 array[i] = array[i] * a % 10;
-                if(array[i] == 0)
-                    array[i] = 10;
-            }
+            if(array[i] == 0)
+                array[i] = 10;
             sb.append(array[i]).append("\n");
         }
         System.out.print(sb);

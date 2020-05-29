@@ -12,13 +12,9 @@ public class b_1712 {
         int fee1 = Integer.parseInt(st.nextToken());
         int fee2 = Integer.parseInt(st.nextToken());
         int price = Integer.parseInt(st.nextToken());
-        int count = 1;
         if(fee2 >= price)
-            count = -1;
-        else {
-            for (int i = 1; (fee1 + (fee2 * i)) >= (price * i); i++)
-                count++;
-        }
-        System.out.println(count);
+            System.out.println(-1);
+        else
+            System.out.println(fee1 / (price - fee2) + 1);
     }
 }

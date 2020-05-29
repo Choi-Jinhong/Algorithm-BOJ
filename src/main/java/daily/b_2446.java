@@ -18,9 +18,6 @@ public class b_2446 {
             for(int j = 0; j < s_count; j++){
                 System.out.print("*");
             }
-            for(int j = 0; j < e_count; j++){
-                System.out.print(" ");
-            }
             if(i < n - 1){
                 e_count++;
                 s_count -= 2;

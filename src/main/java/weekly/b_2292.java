@@ -9,14 +9,10 @@ public class b_2292 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         for(int i = 0; i < n; i++){
-            if(3*i*i - 3*i + 1 >= n) {
-                if(n == 1)
-                    System.out.println(i + 2);
-                else
-                    System.out.println(i);
+            if(3*i*i + 3*i + 1 >= n) {
+                System.out.println(i + 1);
                 break;
             }
         }
-        br.close();
     }
 }

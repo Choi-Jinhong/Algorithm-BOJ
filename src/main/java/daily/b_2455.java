@@ -9,7 +9,7 @@ public class b_2455 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int max = Integer.MIN_VALUE;
-        int inPerson, outPerson, totPerson = 0;
+        int inPerson, outPerson, totPerson = 0; // 한글
         StringTokenizer st;
         for(int i = 0; i < 4; i++){
             st = new StringTokenizer(br.readLine());

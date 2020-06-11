@@ -14,6 +14,7 @@ public class b_1158 {
         int k = Integer.parseInt(st.nextToken());
         int count = 0;
         int x = 0;
+        int check=0;
         boolean[] flag = new boolean[n + 1];
         sb.append("<");
         for(int i = 0; i < flag.length; i++)
@@ -28,9 +29,11 @@ public class b_1158 {
                 sb.append(x).append(", ");
                 flag[x] = false;
                 count = 0;
+                check++;
             }
-            if(sb.length() > 3 * n)
+            if(check == n){
                 break;
+            }
         }
         String s = sb.substring(0, sb.length() - 2);
         s = s + ">";
